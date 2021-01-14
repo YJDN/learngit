@@ -1,0 +1,2 @@
+#·É¿Í²è¹Ý
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=·É¿Í²è¹Ý
