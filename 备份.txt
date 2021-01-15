@@ -1,2 +1,5 @@
 #·É¿Í²è¹Ý
-1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=·É¿Í²è¹Ý
+14 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=·É¿Í²è¹Ý
+
+#WPS
+13 12 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js, tag=wps
