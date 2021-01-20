@@ -75,11 +75,11 @@ function userSignIn() {
           if (safeGet(data)) {
             data = JSON.parse(data);
 			console.log(`打卡，${data.code}`);
+			console.log(`打卡，${data}`);
 			console.log(`打卡，${data.btnText}`);
-			console.log(`打卡，${data.data.btnText}`);
-            if (data.code === 0) {
-              console.log(`今日签到成功，${data.data.btnText}`)
-              message += `今日签到成功，${data.btnText} 🐶\n`;
+            if (data.code === 1) {
+              console.log(`今日签到成功，${data.btnText}`)
+              message += `今日签到成功， 🐶\n`;
 
             } else if (data.code === -1) {
               console.log(`今日已签到`)
