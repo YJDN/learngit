@@ -75,8 +75,7 @@ function userSignIn() {
           if (safeGet(data)) {
             data = JSON.parse(data);
 			console.log(`打卡，${data.code}`);
-			console.log(`打卡，${data}`);
-			console.log(`打卡，${data.btnText}`);
+			console.log(`打卡，${JSON.stringify(data)}`);
             if (data.code === 1) {
               console.log(`今日签到成功，${data.btnText}`)
               message += `今日签到成功， 🐶\n`;
@@ -109,7 +108,7 @@ function taskUrl() {
       'Connection': 'keep-alive',
       'Accept': '*/*',
       'Referer': 'https://pro.m.jd.com/mall/active/3meJyq9BdnjFUfTd5g5kYbQPWAfv/index.html?utm_source=weixin&utm_medium=weixin&utm_campaign=t_1000072672_17053_001&utm_term=Wxfriends&ad_od=share&utm_user=plusmember&gx=RnFgxDVRaTDfw9Rc9dApVEku4Q&PTAG=17053.1.1',
-      'Content-Length': '2170',
+      'Content-Length': '2172',
       "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
     }
   }
