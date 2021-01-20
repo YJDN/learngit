@@ -74,9 +74,9 @@ function userSignIn() {
         } else {
           if (safeGet(data)) {
             data = JSON.parse(data);
-            if (data.code === 1) {
-              console.log(`今日签到成功，获得${data.content[0].title}`)
-              message += `今日签到成功，获得${data.content[0].title} 🐶\n`;
+            if (data.code === 0) {
+              console.log(`今日签到成功，${data.btnText}`)
+              message += `今日签到成功，${data.btnText} 🐶\n`;
 
             } else if (data.code === -1) {
               console.log(`今日已签到`)

@@ -3,3 +3,6 @@
 
 #WPS
 13 12 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js, tag=wps
+
+#JdÒôÏäC1´ò¿¨
+0 12,18 * * * https://raw.githubusercontent.com/YJDN/learngit/master/jd_yx.js, tag=C1ÒôÏä
